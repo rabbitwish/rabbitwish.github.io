@@ -1,0 +1,48 @@
+<table border="1">
+    <thead>
+        <th>breakpoint: 414px</th>
+        <th>breakpoint: before 768px</th>
+    </thead>
+    <tbody>
+        <td>
+            <h3 style="text-align: right;">original image size: 414px</h3>
+            <img src="https://i.picsum.photos/id/1039/414/414.jpg?hmac=47HM9aT86bZfhHh9a3S6SMuzsoxYo4UiTDM0ONbTbiI" alt="green place"/></td>
+        <td>
+            <h3 style="text-align: right;">original image size: 414px</h3>
+            <img src="https://i.picsum.photos/id/1039/414/414.jpg?hmac=47HM9aT86bZfhHh9a3S6SMuzsoxYo4UiTDM0ONbTbiI" alt="green place" width="767px"/></td>
+    </tbody>
+</table>
+<hr/>
+<table border="1">
+    <thead>
+        <th>breakpoint: 414px</th>
+        <th>breakpoint: before 768px</th>
+        <th>calculation</th>
+    </thead>
+    <tbody>
+        <td>
+            <h3 style="text-align: right;">original image size: 767px</h3>
+            <img src="https://i.picsum.photos/id/1039/767/767.jpg?hmac=GjwXAu5-ydhybRx88LAZvSCmN9m4t5JTas_tycyUzXg" alt="green place" width="414px"/></td>
+        <td>
+            <h3 style="text-align: right;">original image size: 767px</h3>
+            <img src="https://i.picsum.photos/id/1039/767/767.jpg?hmac=GjwXAu5-ydhybRx88LAZvSCmN9m4t5JTas_tycyUzXg" alt="green place" width="767px"/></td>
+        <td>768 - 1 = 767px <br/>*using next breakpoint and then minus one.<br/>*issue: image get shrink too much on small screen so it get blurry.</td>
+    </tbody>
+</table>
+<hr/>
+<table border="1">
+    <thead>
+        <th>breakpoint: 414px</th>
+        <th>breakpoint: before 768px</th>
+        <th>calculation</th>
+    </thead>
+    <tbody>
+        <td>
+            <h3 style="text-align: right;">original image size: 590px</h3>
+            <img src="https://picsum.photos/id/1039/590/590.jpg" alt="green place" width="414px"/></td>
+        <td>
+            <h3 style="text-align: right;">original image size: 590px</h3>
+            <img src="https://picsum.photos/id/1039/590/590.jpg" alt="green place" width="767px"/></td>
+        <td>(414 + 767) / 2 = 590px<br/>*using current breakpoint conbine with next breakpoint and then divine by 2</td>
+    </tbody>
+</table>
