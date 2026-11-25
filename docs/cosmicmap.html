@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case study: cosmicmap.app — Saralee Lakphan</title>
+<meta name="description" content="How I designed, built and run cosmicmap.app, an astrocartography web app with my own JavaScript astrology engine, Firebase, Stripe and English and Thai versions.">
+<meta name="theme-color" content="#f7f7f4">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="wrap site-header">
+  <a class="logo" href="index.html">Saralee Lakphan<span>.</span></a>
+  <nav class="nav" aria-label="Main"><a href="index.html#work">← All work</a></nav>
+</header>
+
+<main id="main">
+
+<section class="wrap hero" style="padding-block: 72px 56px; gap: 24px">
+  <h1 class="h1" style="font-size: clamp(38px, 6vw, 80px); max-width: 1000px">cosmicmap.app — an astrology map I designed, built and run on my own</h1>
+  <dl class="facts-row">
+    <div><dt class="meta">Portfolio frame</dt><dd style="margin: 0">05</dd></div>
+    <div><dt class="meta">Role</dt><dd style="margin: 0">Owner, product, design, full-stack</dd></div>
+    <div><dt class="meta">Launched</dt><dd style="margin: 0">March 2026</dd></div>
+    <div><dt class="meta">Languages</dt><dd style="margin: 0">English, Thai</dd></div>
+    <div><dt class="meta">Live</dt><dd style="margin: 0"><a href="https://cosmicmap.app" target="_blank" rel="noopener" style="font-weight: 600">cosmicmap.app ↗</a></dd></div>
+  </dl>
+</section>
+
+<!-- Add screenshots: save them in assets/img/ and replace these two placeholders with <img class="shot" ...> -->
+<section class="wrap row" aria-label="Screenshots" style="padding-bottom: 96px; gap: 20px">
+  <div class="placeholder" style="flex: 2 1 560px; min-height: 420px">Screenshot coming soon — map with planetary lines</div>
+  <div class="placeholder" style="flex: 1 1 280px; min-height: 420px">Screenshot coming soon — mobile city reading</div>
+</section>
+
+<section class="wrap split" style="padding-bottom: 96px">
+  <div class="split-side">
+    <h2 class="h3" style="font-size: 34px">What it does</h2>
+  </div>
+  <div class="split-main">
+    <p>Astrocartography shows where on Earth each planet's influence is strongest for a given birth chart. cosmicmap.app takes your birth date, time and place, calculates your chart, and draws the planetary lines on an interactive world map. Tap a city and you get a reading for living, working or travelling there.</p>
+    <p>There's also a natal house chart page, a paid tier through Stripe, and every page works in English and Thai.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap section" style="padding-block: 96px">
+    <div class="heading">
+      <h2 class="h3" style="font-size: 34px">How it's built</h2>
+    </div>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 24px">
+      <div class="mini"><h3 class="h4" style="font-size: 20px">Front end</h3><p>A vanilla JS single-page app styled with Tailwind 3.4. The natal chart page is React 18. Maps run on Leaflet.</p></div>
+      <div class="mini"><h3 class="h4" style="font-size: 20px">Astrology engine</h3><p>My own plain-JavaScript engine for chart and line calculations, so there's no paid astrology API underneath.</p></div>
+      <div class="mini"><h3 class="h4" style="font-size: 20px">Backend</h3><p>Firebase Hosting, Auth and Firestore, with Cloud Functions on Node 22 in asia-southeast1. DNS through Cloudflare.</p></div>
+      <div class="mini"><h3 class="h4" style="font-size: 20px">Payments &amp; growth</h3><p>Stripe Checkout with a webhook Cloud Function. GA4 with Consent Mode v2 and built-in A/B testing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap split" style="padding-block: 96px">
+  <div class="split-side">
+    <h2 class="h3" style="font-size: 34px">What I'm improving</h2>
+  </div>
+  <div class="split-main">
+    <p>The city readings started out sounding too templated. I audited the live pages in the browser, worked out where the copy repeated itself, and wrote a content template — a TypeScript interface, voice guidelines and before/after examples — so new city content reads like a magazine piece, not a form letter.</p>
+    <p>I keep the judgment calls (tone, what a reading should say) for myself and hand the repetitive generation to AI tools.</p>
+  </div>
+</section>
+
+<section class="wrap" style="padding-bottom: 96px">
+  <div class="actions" style="border-top: 1px solid var(--line); padding-top: 40px; justify-content: space-between; gap: 20px">
+    <a class="btn" href="index.html#work">← Back to all work</a>
+    <a class="btn btn-primary" href="index.html#contact">Work with me</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap site-footer">
+  <span>© 2026 Saralee Lakphan</span>
+  <span>Chiang Mai, Thailand</span>
+</footer>
+</body>
+</html>
