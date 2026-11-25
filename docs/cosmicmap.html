@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Case study: cosmicmap.app — Saralee Lakphan</title>
-<meta name="description" content="How I designed, built and run cosmicmap.app, an astrocartography web app with my own JavaScript astrology engine, Firebase, Stripe and English and Thai versions.">
+<title>Case study: Cosmic Navigator — Saralee Lakphan</title>
+<meta name="description" content="How I built Cosmic Navigator, an astrocartography product that turns a birth chart into a world map and five city recommendations.">
 <meta name="theme-color" content="#f7f7f4">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -20,20 +20,23 @@
 <main id="main">
 
 <section class="wrap hero" style="padding-block: 72px 56px; gap: 24px">
-  <h1 class="h1" style="font-size: clamp(38px, 6vw, 80px); max-width: 1000px">cosmicmap.app — an astrology map I designed, built and run on my own</h1>
+  <h1 class="h1" style="font-size: clamp(38px, 6vw, 80px); max-width: 1000px">I built a world map from a birth chart.</h1>
+  <p class="lead" style="max-width: 760px">Cosmic Navigator turns astrocartography into something people can explore: choose a life goal, see planetary lines on the map, and get five cities ranked for that goal.</p>
   <dl class="facts-row">
-    <div><dt class="meta">Portfolio frame</dt><dd style="margin: 0">05</dd></div>
     <div><dt class="meta">Role</dt><dd style="margin: 0">Owner, product, design, full-stack</dd></div>
     <div><dt class="meta">Launched</dt><dd style="margin: 0">March 2026</dd></div>
     <div><dt class="meta">Languages</dt><dd style="margin: 0">English, Thai</dd></div>
-    <div><dt class="meta">Live</dt><dd style="margin: 0"><a href="https://cosmicmap.app" target="_blank" rel="noopener" style="font-weight: 600">cosmicmap.app ↗</a></dd></div>
+    <div><dt class="meta">Live</dt><dd style="margin: 0"><a href="https://cosmicmap.app" target="_blank" rel="noopener" style="font-weight: 600">Cosmic Navigator ↗</a></dd></div>
   </dl>
 </section>
 
-<!-- Add screenshots: save them in assets/img/ and replace these two placeholders with <img class="shot" ...> -->
-<section class="wrap row" aria-label="Screenshots" style="padding-bottom: 96px; gap: 20px">
-  <div class="placeholder" style="flex: 2 1 560px; min-height: 420px">Screenshot coming soon — map with planetary lines</div>
-  <div class="placeholder" style="flex: 1 1 280px; min-height: 420px">Screenshot coming soon — mobile city reading</div>
+<section class="wrap" aria-label="Cosmic Navigator product screenshot" style="padding-bottom: 96px">
+  <figure class="media">
+    <a class="zoom" href="assets/img/cosmicmap-map.png" target="_blank" rel="noopener" aria-label="Open the full-size Cosmic Navigator map screenshot">
+      <img class="shot" src="assets/img/cosmicmap-map.png" alt="Cosmic Navigator's interactive world map with planetary lines, ranked city markers, and planet filters, shown with sample chart data" width="1440" height="720" fetchpriority="high">
+    </a>
+    <figcaption>The live map view, captured with sample chart data.</figcaption>
+  </figure>
 </section>
 
 <section class="wrap split" style="padding-bottom: 96px">
@@ -41,8 +44,8 @@
     <h2 class="h3" style="font-size: 34px">What it does</h2>
   </div>
   <div class="split-main">
-    <p>Astrocartography shows where on Earth each planet's influence is strongest for a given birth chart. cosmicmap.app takes your birth date, time and place, calculates your chart, and draws the planetary lines on an interactive world map. Tap a city and you get a reading for living, working or travelling there.</p>
-    <p>There's also a natal house chart page, a paid tier through Stripe, and every page works in English and Thai.</p>
+    <p>People arrive with a question — career, love, study, home, growth or travel. Cosmic Navigator calculates the planetary lines from their birth details, places those lines on an interactive map, and ranks five cities against the goal they chose. A city reading explains the alignment in plain language.</p>
+    <p>The same chart also powers a natal house chart and daily readings. The experience is available in English and Thai, with deeper city readings and timing windows in the paid tier.</p>
   </div>
 </section>
 
